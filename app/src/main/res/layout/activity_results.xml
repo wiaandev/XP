@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity"
+    android:background="@drawable/ic_results_activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:fontFamily="@font/ralewaybold"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textSize="34sp"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center"
+        android:fontFamily="@font/ralewaybold"
+        android:textColor="@color/black"
+        android:textSize="144sp"/>
+
+    <ImageView
+        android:id="@+id/iv_highScore"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/illustration"/>
+
+    <TextView
+        android:id="@+id/tv_resultHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ralewaybold"
+        android:text="heading"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_resultSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ralewayregular"
+        android:text="some text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_restart"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="Start Over"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:textAllCaps="false"
+        android:fontFamily="@font/ralewayregular"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

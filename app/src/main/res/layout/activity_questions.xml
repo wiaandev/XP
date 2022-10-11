@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsActivity"
+    android:background="@drawable/ic_activity_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ralewaybold"
+            android:text="Dave "
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_score"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:paddingLeft="30sp"
+        android:fontFamily="@font/ralewaybold"
+        android:textColor="@color/red"
+        android:textSize="22sp"
+        android:layout_marginBottom="22dp"/>
+
+    <TextView
+        android:id="@+id/tv_queNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:paddingTop="5dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ralewaybold"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/iv_que_img"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_splash"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is the question"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/ralewaybold"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:text="Answer"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+        />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Answer"
+            android:textAllCaps="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:text="Answer"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:text="Answer"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+</LinearLayout>
